@@ -20,6 +20,8 @@ public class MarkovMethods {
                                             {0,0,0,0,0,0,0,0,0.307692308,0.384615385,0.461538462,0.538461538,0.615384615,0.692307692,0.769230769,0.846153846,0.923076923,0,1},
         };
     
+    public MarkovMethods(){}
+
     public double[][] tMatrix(){
         return transitionMatrix;
     }
@@ -39,6 +41,12 @@ public class MarkovMethods {
         }
 
 
+        return result;
+    }
+
+    public double[] totalState(int cardTotal){
+        double[] result = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        result[cardTotal-4] = 1;
         return result;
     }
 }
