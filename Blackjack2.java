@@ -56,7 +56,7 @@ public class Blackjack2 {
 
             //player turn
             while(player.calcTotal() < 21){
-                if(player.getTotal() < 14){
+                if(player.getTotal() < 13){
                     //hit:
                     player.drawCard(deck);
                 }
